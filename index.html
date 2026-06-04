@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetControl - Registro de Mascotas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>🐾 PetControl - Registro de Mascotas</h1>
+
+        <div class="formulario">
+
+            <input type="text" id="nombre" placeholder="Nombre de la mascota">
+
+            <select id="tipo">
+                <option value="Perro">🐶 Perro</option>
+                <option value="Gato">🐱 Gato</option>
+                <option value="Ave">🐦 Ave</option>
+                <option value="Conejo">🐰 Conejo</option>
+                <option value="Hamster">🐹 Hamster</option>
+            </select>
+
+            <input type="number" id="edad" placeholder="Edad">
+
+            <select id="unidadEdad">
+                <option value="meses">Meses</option>
+                <option value="años">Años</option>
+            </select>
+
+            <button onclick="agregarMascota()">
+                Registrar Mascota
+            </button>
+
+        </div>
+
+        <p id="mensaje"></p>
+
+        <h3 id="contador">
+            Cantidad de mascotas: 0
+        </h3>
+
+        <button class="vaciar" onclick="eliminarTodas()">
+            Eliminar Todas
+        </button>
+
+        <div id="listaMascotas"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
